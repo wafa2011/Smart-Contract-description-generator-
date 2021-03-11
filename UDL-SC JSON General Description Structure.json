@@ -1,0 +1,46 @@
+{
+"UDL-SC_version" : "", 
+"name" : "", 
+"creation_date":"",
+"Business Perspective": {
+	"Legal":{ "name": "" , "type":"" ,"Link":""},
+	"QOS":{ "service level": { "latency": "", "gasConsomation": "", "ContractGasPrice":""},
+			"Princing" :{" Gaslimit": "", "tokenPrice": ""},
+			"security" : {"signed": "", "tested": "", "link":""}
+	},
+	"participants" : {
+		"provider":"",
+		"FutureUserType":""
+	},
+	"sc characteristics ":{
+		"documentational characteristics":{ "used compiler":"", 
+		    "usedRessources":"", 
+		    "abi" : "",
+			"deployed byte code" : "",
+			"description" : "",
+			"hash":"", 
+			"metadata":""},
+	    "common characteristics":{"type":"",
+			"category":"", "updateDate":"","state":"","version":"", "initialBalance ": ""
+	      ,"creationDate":"", "lifeCycle":""}}},
+
+"technical Perspective":{ "blockhain characteristics ":{ "name":"",  "type":"", "consensus":"","currency":""},
+"Protocol information":{ "adress":""}
+},
+"operationalPerspective":{
+	"Functions" : [
+	{"name": ",
+	"Type": "",
+	"scope" : "",
+	"description": ""
+	"inputs":[{"name": "", "Type": "" }]
+	"outputs": [{"name": "" , "Type": "" }]
+	}],
+	"Events": [
+	{"name": "",
+	"Type": "",
+	"description": "",
+	"outputs": [{"name": "", "Type": "","is_indexed" : true}]
+	}]
+}
+}

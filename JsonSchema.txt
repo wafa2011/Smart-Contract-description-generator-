@@ -1,0 +1,265 @@
+{
+  "type" : "object",
+  "properties" : {
+    "name" : {
+      "type" : "string"
+    },
+    "version" : {
+      "type" : "string"
+    },
+    "creationDate" : {
+      "type" : "string"
+    },
+    "metierDisc" : {
+      "type" : "object",
+      "properties" : {
+        "qos" : {
+          "type" : "object",
+          "properties" : {
+            "servicelevel" : {
+              "type" : "object",
+              "properties" : {
+                "letency" : {
+                  "type" : "string"
+                },
+                "gazConsomation" : {
+                  "type" : "string"
+                },
+                "contractGazPrice" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "pricing" : {
+              "type" : "object",
+              "properties" : {
+                "gazLimit" : {
+                  "type" : "string"
+                },
+                "tokenPrice" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "security" : {
+              "type" : "object",
+              "properties" : {
+                "signed" : {
+                  "type" : "string"
+                },
+                "tested" : {
+                  "type" : "string"
+                },
+                "link" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "legal" : {
+              "type" : "object",
+              "properties" : {
+                "name" : {
+                  "type" : "string"
+                },
+                "type" : {
+                  "type" : "string"
+                },
+                "link" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        },
+        "participant" : {
+          "type" : "object",
+          "properties" : {
+            "futureUserType" : {
+              "type" : "string"
+            },
+            "providerAdress" : {
+              "type" : "string"
+            }
+          }
+        },
+        "smartcontractcaracter" : {
+          "type" : "object",
+          "properties" : {
+            "commonCarac" : {
+              "type" : "object",
+              "properties" : {
+                "category" : {
+                  "type" : "string"
+                },
+                "creationDate" : {
+                  "type" : "string"
+                },
+                "updateDate" : {
+                  "type" : "string"
+                },
+                "statue" : {
+                  "type" : "string"
+                },
+                "version" : {
+                  "type" : "string"
+                },
+                "lifeCycle" : {
+                  "type" : "string"
+                },
+                "type" : {
+                  "type" : "string"
+                },
+                "initialBalance" : {
+                  "type" : "string"
+                }
+              }
+            },
+            "documentation" : {
+              "type" : "object",
+              "properties" : {
+                "abi" : {
+                  "type" : "string"
+                },
+                "deployedbyteCode" : {
+                  "type" : "string"
+                },
+                "hash" : {
+                  "type" : "string"
+                },
+                "description" : {
+                  "type" : "string"
+                },
+                "metadata" : {
+                  "type" : "string"
+                },
+                "usedRessources" : {
+                  "type" : "string"
+                },
+                "usedCompiler" : {
+                  "type" : "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "operationalDisc" : {
+      "type" : "object",
+      "properties" : {
+        "functions" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "type" : {
+                "type" : "string"
+              },
+              "scope" : {
+                "type" : "string"
+              },
+              "ins" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "name" : {
+                      "type" : "string"
+                    },
+                    "type" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              },
+              "outs" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "name" : {
+                      "type" : "string"
+                    },
+                    "type" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "events" : {
+          "type" : "array",
+          "items" : {
+            "type" : "object",
+            "properties" : {
+              "name" : {
+                "type" : "string"
+              },
+              "description" : {
+                "type" : "string"
+              },
+              "type" : {
+                "type" : "string"
+              },
+              "outs" : {
+                "type" : "array",
+                "items" : {
+                  "type" : "object",
+                  "properties" : {
+                    "name" : {
+                      "type" : "string"
+                    },
+                    "type" : {
+                      "type" : "string"
+                    },
+                    "is_indexed" : {
+                      "type" : "string"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "techniqueDisc" : {
+      "type" : "object",
+      "properties" : {
+        "blockchaininfo" : {
+          "type" : "object",
+          "properties" : {
+            "name" : {
+              "type" : "string"
+            },
+            "currency" : {
+              "type" : "string"
+            },
+            "consensus" : {
+              "type" : "string"
+            },
+            "type" : {
+              "type" : "string"
+            }
+          }
+        },
+        "protocolinfo" : {
+          "type" : "object",
+          "properties" : {
+            "adresse" : {
+              "type" : "string"
+            }
+          }
+        }
+      }
+    }
+  }
+}
